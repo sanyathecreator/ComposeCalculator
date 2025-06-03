@@ -36,7 +36,7 @@ fun Calculator(
             verticalArrangement = Arrangement.spacedBy(buttonSpacing)
         ) {
             Text(
-                text = state.number1 + (state.operation ?: "") + state.number2,
+                text = state.number1 + (state.operation?.symbol ?: "") + state.number2,
                 textAlign = TextAlign.End,
                 modifier = Modifier
                     .fillMaxWidth()
@@ -61,7 +61,7 @@ fun Calculator(
                     }
                 )
                 CalculatorButton(
-                    symbol = "Delete",
+                    symbol = "Del",
                     modifier = Modifier
                         .background(LightGrey)
                         .aspectRatio(1f)
