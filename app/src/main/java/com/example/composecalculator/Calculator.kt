@@ -43,6 +43,7 @@ fun Calculator(
                     .padding(vertical = 32.dp),
                 fontWeight = FontWeight.Light,
                 fontSize = 80.sp,
+                lineHeight = 88.sp,
                 color = Color.White,
                 maxLines = 2
             )
